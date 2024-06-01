@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1312</title>
+
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            color:black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #181926 , #0D1117, #181926);
+                color: #E6EDF3;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container span {
+            position: absolute;
+            inset: 0;
+            border: 2px solid #fff;
+            transition: 0.5s;
+        }
+
+        .container span:nth-child(1) {
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            animation: animate 6s linear infinite;
+        }
+
+        .container span:nth-child(2) {
+            border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+            animation: animate 4s linear infinite;
+        }
+
+        .container span:nth-child(3) {
+            border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+            animation: animate2 10s linear infinite;
+        }
+
+        .container:hover span {
+            border: 6px solid var(--clr);
+            filter: drop-shadow(0 0 20px var(--clr));
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .form-container {
+           
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-container h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+            
+        }
+
+        .input-container input {
+            position: relative;
+            width: 100%;
+            padding: 12px 20px;
+            background: linear-gradient(to right, #181926 , #0D1117, #181926);
+           border: 1px solid rgba(0, 0, 0, 0);
+            font-size: 1.2em;
+            color: white;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .input-container input[type="submit"] {
+            border-radius: 7px;
+            width: 100%;
+            background: #0078ff;
+            background-color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+
+        .input-container input::placeholder {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .links-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .links-container a {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span style="--clr:#ff0000;"></span>
+        <span style="--clr:#000000;"></span>
+        <span style="--clr:#ffffff;"></span>
+        
+        <div class="form-container">
+            <h2>Login</h2>
+            <div class="input-container">
+                <input type="text" placeholder="Username" id="login" required max="10" min="1">
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Password" id="senha" required  max="10" min="1">
+            </div>
+            <div class="input-container">
+                <input type="submit" value="Sign in" onclick="logar(); return false">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                
+                location.href = "pag003.html";
+            }else{
+                alert('Incorrect username or password');
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+<script>
+    function clickMenu() {
+        if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+            alert('No acess.');
+        }
+
+        else{
+           
+            alert('No acess.');
+        }
+
+    }
+
+</script>
+    
+   
+</body>
+</html>
