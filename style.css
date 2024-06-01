@@ -16,14 +16,21 @@
 
 
         nav .nav-main .nav-mobile-menu {
-            display: none;
-            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            background-color: #664efc;
+            margin-left: 10px;
+            
         }
 
         nav .nav-main .nav-mobile-menu img {
             width: 100%;
             display: block;
+            
         }
+
+
+
 
         nav .nav-main ul {
             display: flex;
