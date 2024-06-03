@@ -9,6 +9,11 @@
         }
 
         body {
+            -webkit-filter: blur(0.5px);
+            -moz-filter: blur(1px);
+            -o-filter: blur(0.5px);
+            -ms-filter: blur(1px);
+            filter: blur(0.5px);
             width: 100%;
             height: auto;
             color: #e9e6e6;
@@ -17,6 +22,7 @@
 
 
         nav .nav-main .nav-mobile-menu {
+            
             color: #fff;
             font-weight: 600;
             background-color: #664efc;
@@ -93,7 +99,7 @@
 
 
         footer {
-           
+            
             color: #e9e6e6;
             width: 100%;
             padding: 50px 0px 50px 0px;
@@ -209,6 +215,7 @@
 
 
         main section {
+            
             background: linear-gradient(to right, #181926 , #0D1117, #181926);
             width: 100%;
             display: flex;
@@ -281,6 +288,10 @@
         }
 
         main section.section-1 .section-1-main .section-1-content .section-1-links .section-1-link {
+            
+    
+    
+   
             padding: 12px 18px;
             border-radius: 5px;
             text-decoration: none;
