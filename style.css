@@ -20,7 +20,7 @@
             color: #fff;
             font-weight: 600;
             background-color: #664efc;
-            margin-left: 10px;
+            
             
         }
 
@@ -93,6 +93,7 @@
 
 
         footer {
+           
             color: #e9e6e6;
             width: 100%;
             padding: 50px 0px 50px 0px;
@@ -163,8 +164,10 @@
         footer .footer-main .footer-content .footer-2 .footer-2-2 .footer-2-2-title,
         footer .footer-main .footer-content .footer-2 .footer-2-3 .footer-2-3-title,
         footer .footer-main .footer-content .footer-2 .footer-2-4 .footer-2-4-title {
+            padding-left: 20px;
             font-size: 16px;
             color: #e9e6e6;
+            
         }
 
         footer .footer-main .footer-content .footer-2 .footer-2-1 .footer-2-1-links,
@@ -175,6 +178,8 @@
             display: flex;
             flex-direction: column;
             row-gap: 5px;
+            padding-left: 20px;
+          
         }
 
         footer .footer-main .footer-content .footer-2 .footer-2-1 .footer-2-1-links li a,
@@ -184,17 +189,21 @@
             text-decoration: none;
             color: #6e6f6e;
             font-size: 14px;
+            
+        
         }
 
         footer .footer-main .footer-text {
             width: 100%;
             text-align: center;
+           
         }
 
         footer .footer-main .footer-content .footer-1 .footer-1-copyright a {
             text-decoration: none;
             color: #e9e6e6;
             font-weight: 600;
+          
         }
 
 
@@ -231,14 +240,7 @@
             position: relative;
         }
 
-        main section.section-1 nav .nav-main .nav-logo a img {
-            display: block;
-        }
-
-        main section.section-1 nav.mobile-menu {
-            padding: 0px;
-            display: none;
-        }
+       
 
         main section.section-1 nav.mobile-menu.active {
             display: block;
@@ -296,14 +298,7 @@
             font-weight: 500;
         }
 
-        main section.section-1 .section-1-main .section-1-img {
-            width: 50%;
-        }
-
-        main section.section-1 .section-1-main .section-1-img img {
-            width: 100%;
-            display: block;
-        }
+       
 
 
         main section.section-2 {
@@ -357,7 +352,8 @@
 
         main section.section-2 .section-2-main .section-2-2 .section-2-2-img,
         main section.section-2 .section-2-main .section-2-1 .section-2-1-img {
-            width: 40%;
+            width: 50%;
+            padding: 10px;
         }
 
         main section.section-2 .section-2-main .section-2-2 .section-2-2-img img,
@@ -369,7 +365,7 @@
         
 
 
-        section-2-2-img
+
 
 
 
