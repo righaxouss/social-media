@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="shortcut icon" href="imagens/flavicon.io.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/flavicon.io.pg" type="image/x-icon">
 
     <style>
                 * {
@@ -28,6 +28,7 @@
         }
 
         .container {
+           
             position: relative;
             width: 500px;
             height: 500px;
@@ -36,63 +37,16 @@
             align-items: center;
         }
 
-        .container span {
-            position: absolute;
-            inset: 0;
-            border: 2px solid ;
-            transition: 0.5s;
-        }
 
-        .container span:nth-child(1) {
-            border: 2px solid  #ff0000;
-            border-radius: 100% 100% 100% 100% /  100% 100% 100% 100%;
-            animation: animate 6s linear infinite;
-        }
-
-        .container span:nth-child(2) {
-            border: 2px solid  #000000;
-           
-            border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-            animation: animate 4s linear infinite;
-        }
-
-        .container span:nth-child(3) {
-            border: 2px solid  #ffffff;
-            border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
-            animation: animate2 10s linear infinite;
-        }
-
-        .container:hover span {
-            border:  6px solid var(--clr);
-            filter: drop-shadow(0 0 20px var(--clr));
-        }
-
-        @keyframes animate {
-            0% {
-                transform: rotate(0deg);
-               
-            }
-
-            100% {
-                
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes animate2 {
-            0% {
-                transform: rotate(360deg);
-            }
-
-            100% {
-                transform: rotate(0deg);
-            }
-        }
+        
 
         .form-container {
-           
+            border: 1px solid rgba(0, 0, 0, 0.041);
+            border-radius: 7px;
+            padding: 30px;
+           background-color: #0000001f;
             position: absolute;
-            width: 300px;
+            width: 400px;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -116,12 +70,18 @@
             position: relative;
             width: 100%;
             padding: 12px 20px;
-            background: linear-gradient(to right, #181926 , #0D1117, #181926);
+            background-color: #00000000;
            border: 1px solid rgba(0, 0, 0, 0);
             font-size: 1.2em;
             color: white;
             box-shadow: none;
             outline: none;
+        }
+
+        .input-container input:hover{
+           margin: 5px;
+
+
         }
 
         .input-container input[type="submit"] {
@@ -159,9 +119,8 @@
 
 <body>
     <div class="container">
-        <span style="--clr:#ff0000;"></span>
-        <span style="--clr:#000000;"></span>
-        <span style="--clr:#ffffff;"></span>
+        
+       
         
         <div class="form-container">
             <h2>Login</h2>
@@ -186,11 +145,11 @@
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if(login == "admin" && senha == "admin"){
+            if(login == "1312" && senha == "1312"){
                 
                 location.href = "pagina001.html";
             }else{
-                alert('Incorrect username or password');
+                alert('Incorrect');
             }
 
         }
@@ -201,22 +160,7 @@
 
 
 
-<script>
-    function clickMenu() {
-        if (itens.style.display == 'block'){
-            itens.style.display = 'none'
-            alert('No acess.');
-        }
 
-        else{
-           
-            alert('No acess.');
-        }
-
-    }
-
-</script>
-    
    
 </body>
 </html>
