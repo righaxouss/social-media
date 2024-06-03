@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
         * {
+            animation-delay: 3s;
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
@@ -290,6 +291,7 @@
         }
 
         main section.section-1 .section-1-main .section-1-content .section-1-alt-txt span {
+            text-decoration: underline;
             color: #664efc;
             font-weight: 500;
         }
@@ -309,10 +311,10 @@
         }
 
         main section.section-2 .section-2-main {
-            width: 80%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            row-gap: 75px;
+            row-gap: 55px;
         }
 
         main section.section-2 .section-2-main .section-2-2,
@@ -364,219 +366,13 @@
             display: block;
         }
 
+        
+
+
+        section-2-2-img
 
 
 
 
 
-
-
-
-
-        @media only screen and (max-width: 1200px) {
-
-            main section.section-1 nav,
-            main section.section-1 .section-1-main,
-            main section.section-2 .section-2-main,
-            footer .footer-main {
-                width: 90%;
-            }
-
-            main section.section-1 {
-                padding: 20px 0px 70px 0px;
-            }
-
-            main section.section-2 {
-                padding: 65px 0px 65px 0px;
-            }
-
-
-
-            /* login page */
-            main section.section-login .section-login-1 .section-login-1-main,
-            main section.section-login .section-login-2 .section-login-2-main {
-                width: 85%;
-            }
-
-            main section.section-login .section-login-1 .section-login-1-main .section-login-1-title,
-            main section.section-login .section-login-1 .section-login-1-main .section-login-1-form {
-                margin-top: 35px;
-            }
-
-            main section.section-login .header-main,
-            main section.section-login .section-main {
-                width: 85%;
-            }
-
-            main section.section-login .section-main .section-login-1,
-            main section.section-login .section-login-2 {
-                width: 47%;
-            }
-        }
-
-        @media only screen and (max-width: 900px) {
-            footer {
-                padding: 35px 0px;
-            }
-
-            footer .footer-main .footer-content {
-                flex-direction: column;
-                row-gap: 30px;
-            }
-
-            footer .footer-main .footer-content .footer-1,
-            footer .footer-main .footer-content .footer-2 {
-                width: 100%;
-            }
-
-
-            main section.section-1 {
-                padding: 20px 0px 50px 0px;
-            }
-
-            main section.section-1 .section-1-main {
-                flex-direction: column-reverse;
-                row-gap: 50px;
-            }
-
-            main section.section-1 .section-1-main .section-1-content,
-            main section.section-1 .section-1-main .section-1-img {
-                width: 100%;
-            }
-
-            main section.section-1 .section-1-main .section-1-img {
-                display: grid;
-                place-items: center;
-            }
-
-            main section.section-1 .section-1-main .section-1-img img {
-                width: 60%;
-            }
-
-            main section.section-1 .section-1-main .section-1-content {
-                row-gap: 15px;
-            }
-
-            main section.section-2 {
-                padding: 55px 0px 65px 0px;
-            }
-
-            main section.section-2 .section-2-main .section-2-2,
-            main section.section-2 .section-2-main .section-2-1 {
-                column-gap: 65px;
-            }
-
-
-
-            /* login page */
-            main section.section-login .section-main {
-                padding: 35px 0px;
-            }
-
-            main section.section-login .section-login-1 .section-login-1-main,
-            main section.section-login .section-login-2 .section-login-2-main {
-                width: 90%;
-            }
-
-            main section.section-login .section-login-1 .section-login-1-main {
-                height: 90%;
-            }
-
-            main section.section-login .section-login-1 .section-login-1-main .section-login-1-title,
-            main section.section-login .section-login-1 .section-login-1-main .section-login-1-form {
-                margin-top: 25px;
-            }
-
-            main section.section-login .section-main {
-                flex-direction: column;
-                row-gap: 50px;
-            }
-
-            main section.section-login .header-main,
-            main section.section-login .section-main {
-                width: 90%;
-            }
-
-            main section.section-login .section-main .section-login-1,
-            main section.section-login .section-login-2 {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            nav .nav-main .nav-mobile-menu {
-                display: block;
-            }
-
-            nav .nav-main ul {
-                display: none;
-            }
-
-            nav.mobile-menu ul:last-of-type li:last-child a {
-                margin-left: unset;
-            }
-
-            footer .footer-main .footer-content .footer-2 {
-                flex-direction: column;
-                row-gap: 25px;
-            }
-
-            footer .footer-main .footer-content .footer-2 .footer-f1,
-            footer .footer-main .footer-content .footer-2 .footer-f2 {
-                width: 100%;
-            }
-
-
-
-            main section.section-1 .section-1-main .section-1-img img {
-                width: 80%;
-            }
-
-            main section.section-2 .section-2-main .section-2-1 {
-                flex-direction: column-reverse;
-            }
-
-            main section.section-2 .section-2-main .section-2-2 {
-                flex-direction: column;
-            }
-
-            main section.section-2 .section-2-main {
-                row-gap: 65px;
-            }
-
-            main section.section-2 .section-2-main .section-2-1,
-            main section.section-2 .section-2-main .section-2-2 {
-                row-gap: 35px;
-            }
-
-            main section.section-2 .section-2-main .section-2-2 .section-2-2-content,
-            main section.section-2 .section-2-main .section-2-1 .section-2-1-content,
-            main section.section-2 .section-2-main .section-2-2 .section-2-2-img,
-            main section.section-2 .section-2-main .section-2-1 .section-2-1-img {
-                width: 100%;
-            }
-
-
-
-
-            /* login page */
-            main section.section-login .header-main {
-                height: 80px;
-            }
-
-            main section.section-login .header-main .header-login-btn {
-                margin-bottom: 7px;
-            }
-
-            main section.section-login .header-main .header-login-btn span {
-                display: none;
-            }
-
-            main section.section-login .section-main {
-                padding: 25px 0px 35px 0px;
-            }
-
-            main section.section-login .section-main .section-login-2 .section-login-2-main {
-                padding: 35px 25px;
-            }
-        }
+        
